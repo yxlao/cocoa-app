@@ -6,6 +6,7 @@ add_executable(
     MACOSX_BUNDLE
     AppDelegate.h
     AppDelegate.mm
+    # file_handler.mm
     main.mm
     MainMenu.xib
 )
