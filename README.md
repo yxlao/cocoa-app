@@ -7,9 +7,9 @@ Simple CMake-based cocoa application
 
 ### Usage
 ```bash
-> git clone https://github.com/forexample/cocoa-app
-> cd cocoa-app/
-> cmake -H. -B_builds -GXcode
-> cmake --build _builds/
-> open _builds/foo.xcodeproj/
+mkdir build
+cd build
+cmake -G Xcode  ..
+cmake --build . --target foo
+rm -rf /Applications/foo.app && cp -r Debug/foo.app /Applications
 ```
