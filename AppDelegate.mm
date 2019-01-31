@@ -24,15 +24,26 @@
 //     // TODO: Your custom URL handling code here
 // }
 
+- (NSString *)strCat: (NSString *)one: (NSString *)two
+{
+    NSString *myString;
+    myString = [NSString stringWithFormat:@"%@%@", one , two];
+    return myString;
+}
+
 -(BOOL)application:(NSApplication *)sender openFile:(NSString *)filename
 {
+    // Redirect log for debugging
     int fd = creat("/Users/ylao/repo/cocoa-app/my_log.txt",
-                       S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
+                   S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
     close(STDERR_FILENO);
     dup(fd);
     close(fd);
-    NSLog(@"this will be written to my_log");
-    NSLog(@"%@", filename);
+
+    // Get full command
+    NSString *open3d_viewer_path = @"/Users/ylao/repo/Open3D-Viewer/open3d-viewer";
+    NSString *full_command = [NSString stringWithFormat:@"%@ %@", open3d_viewer_path, filename];
+    NSLog(full_command);
     return YES;
 }
 
