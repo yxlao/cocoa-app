@@ -54,6 +54,8 @@
     [task waitUntilExit];
     [task release];
 
+    // Terminate app: https://stackoverflow.com/a/25259343/1255535
+    [[NSApplication sharedApplication] terminate:self];
     return YES;
 }
 
