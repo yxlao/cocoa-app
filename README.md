@@ -10,6 +10,5 @@ Simple CMake-based cocoa application
 mkdir build
 cd build
 cmake -GXcode  ..
-cmake --build . --target
-rm -rf /Applications/open3d-viewer.app && cp -r Debug/open3d-viewer.app /Applications
+cmake --build . --target && rm -rf /Applications/open3d-viewer.app && cp -r Debug/open3d-viewer.app /Applications
 ```
