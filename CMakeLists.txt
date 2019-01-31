@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 2.8.8)
-project(foo)
+project(open3d-viewer)
 
 add_executable(
-    foo
+    open3d-viewer
     MACOSX_BUNDLE
     AppDelegate.h
     AppDelegate.mm
@@ -18,7 +18,7 @@ set_source_files_properties(
 )
 
 set_target_properties(
-    foo
+    open3d-viewer
     PROPERTIES
     MACOSX_BUNDLE_INFO_PLIST
     ${CMAKE_CURRENT_LIST_DIR}/plist.in

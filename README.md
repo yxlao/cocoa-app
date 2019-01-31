@@ -9,7 +9,7 @@ Simple CMake-based cocoa application
 ```bash
 mkdir build
 cd build
-cmake -G Xcode  ..
-cmake --build . --target foo
-rm -rf /Applications/foo.app && cp -r Debug/foo.app /Applications
+cmake -GXcode  ..
+cmake --build . --target
+rm -rf /Applications/open3d-viewer.app && cp -r Debug/open3d-viewer.app /Applications
 ```
