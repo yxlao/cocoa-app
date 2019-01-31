@@ -6,7 +6,9 @@ int main(int argc, const char *argv[]) {
     [task setArguments:[NSArray arrayWithObjects:@"/Users/ylao/repo/playground/write_hello_file.sh", nil]];
     [task setStandardOutput:[NSPipe pipe]];
     [task setStandardInput:[NSPipe pipe]];
+
     [task launch];
+    [task waitUntilExit];
     [task release];
     return 0;
     // return NSApplicationMain(argc, argv);
