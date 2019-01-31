@@ -9,10 +9,18 @@ add_executable(
     # file_handler.mm
     main.mm
     MainMenu.xib
+    open3d.icns
 )
 
 set_source_files_properties(
     MainMenu.xib
+    PROPERTIES
+    MACOSX_PACKAGE_LOCATION
+    Resources
+)
+
+set_source_files_properties(
+    open3d.icns
     PROPERTIES
     MACOSX_PACKAGE_LOCATION
     Resources
