@@ -10,8 +10,7 @@ To build as XCode target
 ```bash
 mkdir build
 cd build
-cmake -GXcode  ..
-cmake --build . --target && rm -rf /Applications/open3d-viewer.app && cp -r Debug/open3d-viewer.app /Applications
+cmake -GXcode  .. && cmake --build . --target && rm -rf /Applications/open3d-viewer.app && cp -r Debug/open3d-viewer.app /Applications
 ```
 
 To build as normal target
