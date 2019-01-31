@@ -20,7 +20,7 @@
     // Get full command
     NSString *open3d_viewer_path = @"/Users/ylao/repo/Open3D-Viewer/open3d-viewer";
     NSString *full_command = [NSString stringWithFormat:@"%@ %@", open3d_viewer_path, filename];
-    NSLog(@"%@", full_command);
+    // NSLog(@"%@", full_command);
 
     NSTask *task = [[NSTask alloc] init];
     [task setLaunchPath:@"/bin/bash"];
