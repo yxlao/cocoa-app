@@ -7,15 +7,14 @@ add_executable(
     AppDelegate.h
     AppDelegate.mm
     main.mm
-    MainMenu.xib
 )
 
-set_source_files_properties(
-    MainMenu.xib
-    PROPERTIES
-    MACOSX_PACKAGE_LOCATION
-    Resources
-)
+# set_source_files_properties(
+#     MainMenu.xib
+#     PROPERTIES
+#     MACOSX_PACKAGE_LOCATION
+#     Resources
+# )
 
 set_target_properties(
     foo
