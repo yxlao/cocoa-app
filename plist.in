@@ -12,7 +12,7 @@
                 <string>ply</string>
             </array>
             <key>CFBundleTypeIconFile</key>
-			<string>open3d.icns</string>
+			<string>open3d_docs.icns</string>
             <key>CFBundleTypeMIMETypes</key>
             <array>
                 <string>model/x-ply</string>
