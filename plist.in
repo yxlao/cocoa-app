@@ -2,12 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>English</string>
     <key>CFBundleDocumentTypes</key>
     <array>
         <dict>
             <key>CFBundleTypeExtensions</key>
             <array>
                 <string>ply</string>
+            </array>
+            <key>CFBundleTypeIconFile</key>
+			<string>open3d.icns</string>
+            <key>CFBundleTypeMIMETypes</key>
+            <array>
+                <string>model/x-ply</string>
             </array>
             <key>CFBundleTypeName</key>
             <string>PLY 3D file</string>
@@ -18,73 +26,33 @@
             <key>CFBundleTypeRole</key>
             <string>Viewer</string>
             <key>LSIsAppleDefaultForType</key>
-            <string>Yes</string>
-        </dict>
-        <dict>
-            <key>CFBundleTypeExtensions</key>
-            <array>
-                <string>pcd</string>
-            </array>
-            <key>CFBundleTypeName</key>
-            <string>PCD 3D file</string>
-            <key>CFBundleTypeOSTypes</key>
-            <array>
-                <string>PCD</string>
-            </array>
-            <key>CFBundleTypeRole</key>
-            <string>Viewer</string>
-            <key>LSIsAppleDefaultForType</key>
-            <string>Yes</string>
-        </dict>
-        <dict>
-            <key>CFBundleTypeExtensions</key>
-            <array>
-                <string>xyz</string>
-            </array>
-            <key>CFBundleTypeName</key>
-            <string>XYZ 3D file</string>
-            <key>CFBundleTypeOSTypes</key>
-            <array>
-                <string>XYZ</string>
-            </array>
-            <key>CFBundleTypeRole</key>
-            <string>Viewer</string>
-            <key>LSIsAppleDefaultForType</key>
-            <string>Yes</string>
+            <true/>
         </dict>
     </array>
-    <key>CFBundleDevelopmentRegion</key>
-    <string>en</string>
     <key>CFBundleDisplayName</key>
-    <string>${PRODUCT_NAME}</string>
+    <string>open3d-viewer</string>
     <key>CFBundleExecutable</key>
     <string>${MACOSX_BUNDLE_EXECUTABLE_NAME}</string>
     <key>CFBundleGetInfoString</key>
-    <string>${MACOSX_BUNDLE_INFO_STRING}</string>
+    <string>The Open3D team</string>
     <key>CFBundleIconFile</key>
-    <string>open3d</string>
+    <string>open3d.icns</string>
     <key>CFBundleIdentifier</key>
-    <string>${MACOSX_BUNDLE_GUI_IDENTIFIER}</string>
+    <string>org.open3d.open3d-0.5.0</string>
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
-    <key>CFBundleLongVersionString</key>
-	<string>0.5.0</string>
-	<key>CFBundleShortVersionString</key>
-	<string>0.5.0</string>
     <key>CFBundleName</key>
     <string>${MACOSX_BUNDLE_BUNDLE_NAME}</string>
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleSignature</key>
-    <string>????</string>
+    <string>Open3D</string>
     <key>CFBundleVersion</key>
-    <string>${MACOSX_BUNDLE_BUNDLE_VERSION}</string>
-    <key>CSResourcesFileMapped</key>
-    <true/>
-    <key>NSHumanReadableCopyright</key>
-    <string>${MACOSX_BUNDLE_COPYRIGHT}</string>
-    <key>LSMinimumSystemVersion</key>
-    <string>${MACOSX_DEPLOYMENT_TARGET}</string>
+    <string>0.5.0</string>
+    <key>CFBundleLongVersionString</key>
+	<string>0.5.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.5.0</string>
     <key>NSMainNibFile</key>
     <string>MainMenu</string>
     <key>NSPrincipalClass</key>
