@@ -27,6 +27,56 @@
             <string>Viewer</string>
             <key>LSIsAppleDefaultForType</key>
             <true/>
+            <key>LSHandlerRank</key>
+			<string>Owner</string>
+        </dict>
+        <dict>
+            <key>CFBundleTypeExtensions</key>
+            <array>
+                <string>pcd</string>
+            </array>
+            <key>CFBundleTypeIconFile</key>
+			<string>open3d_docs.icns</string>
+            <key>CFBundleTypeMIMETypes</key>
+            <array>
+                <string>model/x-pcd</string>
+            </array>
+            <key>CFBundleTypeName</key>
+            <string>PCD 3D file</string>
+            <key>CFBundleTypeOSTypes</key>
+            <array>
+                <string>PCD</string>
+            </array>
+            <key>CFBundleTypeRole</key>
+            <string>Viewer</string>
+            <key>LSIsAppleDefaultForType</key>
+            <true/>
+            <key>LSHandlerRank</key>
+			<string>Owner</string>
+        </dict>
+        <dict>
+            <key>CFBundleTypeExtensions</key>
+            <array>
+                <string>xyz</string>
+            </array>
+            <key>CFBundleTypeIconFile</key>
+			<string>open3d_docs.icns</string>
+            <key>CFBundleTypeMIMETypes</key>
+            <array>
+                <string>model/x-xyz</string>
+            </array>
+            <key>CFBundleTypeName</key>
+            <string>XYZ 3D file</string>
+            <key>CFBundleTypeOSTypes</key>
+            <array>
+                <string>XYZ</string>
+            </array>
+            <key>CFBundleTypeRole</key>
+            <string>Viewer</string>
+            <key>LSIsAppleDefaultForType</key>
+            <true/>
+            <key>LSHandlerRank</key>
+			<string>Owner</string>
         </dict>
     </array>
     <key>CFBundleDisplayName</key>
