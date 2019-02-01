@@ -8,8 +8,7 @@
     // Insert code here to initialize your application
 }
 
--(BOOL)application:(NSApplication *)sender openFile:(NSString *)filename
-{
+- (BOOL)application:(NSApplication *)sender openFile:(NSString *)filename {
     // Redirect log for debugging
     int fd = creat("/Users/ylao/repo/cocoa-app/my_log.txt",
                    S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
@@ -18,8 +17,11 @@
     close(fd);
 
     // Get full command
-    NSString *open3d_viewer_path = @"/Users/ylao/repo/Open3D-Viewer/open3d-viewer";
-    NSString *full_command = [NSString stringWithFormat:@"%@ %@", open3d_viewer_path, filename];
+    NSString *resource_path = [[NSBundle mainBundle] resourcePath];
+    NSString *open3d_viewer_path = [NSString
+            stringWithFormat:@"%@/%@", resource_path, @"open3d-viewer-bin"];
+    NSString *full_command =
+            [NSString stringWithFormat:@"%@ %@", open3d_viewer_path, filename];
     // NSLog(@"%@", full_command);
 
     NSTask *task = [[NSTask alloc] init];

@@ -9,10 +9,18 @@ add_executable(
     main.mm
     MainMenu.xib
     open3d.icns
+    open3d-viewer-bin
 )
 
 set_source_files_properties(
     MainMenu.xib
+    PROPERTIES
+    MACOSX_PACKAGE_LOCATION
+    Resources
+)
+
+set_source_files_properties(
+    open3d-viewer-bin
     PROPERTIES
     MACOSX_PACKAGE_LOCATION
     Resources
