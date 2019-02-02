@@ -8,6 +8,7 @@ add_executable(
     AppDelegate.mm
     main.mm
     MainMenu.xib
+    external.cc
     open3d.icns
     open3d_docs.icns
     open3d-viewer-bin
